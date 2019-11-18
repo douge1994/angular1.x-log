@@ -1,0 +1,15 @@
+<div ng-controller='testCtrl'>
+    this is test html
+    {{people}}
+    {{$this.people}}
+    <div>
+        <ul>
+            <li ng-repeat='li in people'>
+                <a ui-sref="test.child({id: li.id})">
+                    {{li.name}}
+                </a>
+            </li>
+        </ul>
+        <div ui-view></div>
+    </div>
+</div>
